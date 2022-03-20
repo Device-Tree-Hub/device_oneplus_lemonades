@@ -21,19 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonades device
 $(call inherit-product, device/oneplus/lemonades/device.mk)
 
-# Inherit some common Havoc-OS stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common TenX-OS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Boot Animation
+# TenX Extras
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Official
-HAVOC_BUILD_TYPE := Official
-HAVOC_MAINTAINER := Chandu
-HAVOC_GROUP_URL := https://t.me/havoc_oneplus8
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := havoc_lemonades
+PRODUCT_NAME := aosp_lemonades
 PRODUCT_DEVICE := lemonades
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

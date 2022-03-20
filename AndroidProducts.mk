@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_lemonades.mk
+    $(LOCAL_DIR)/aosp_lemonades.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_lemonades-user \
-    havoc_lemonades-userdebug \
-    havoc_lemonades-eng
+    aosp_lemonades-user \
+    aosp_lemonades-userdebug \
+    aosp_lemonades-eng
